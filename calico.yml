@@ -17,14 +17,13 @@ data:
   cni_network_config: |-
     {
       "name": "k8s-pod-network",
-      "cniVersion": "0.3.0",
+      "cniVersion": "0.3.1",
       "plugins": [
         {
           "type": "calico",
           "log_level": "debug",
           "etcd_endpoints": "__ETCD_ENDPOINTS__",
           "mtu": 1500,
-          "nodename": "__KUBERNETES_NODE_NAME__",
           "ipam": {
             "type": "calico-ipam"
           },
